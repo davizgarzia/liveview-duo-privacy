@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LiveView Duo — Support</title>
+<style>
+  :root {
+    --bg: #ffffff; --ink: #141414; --muted: #5c5c5c;
+    --rule: #e4e4e4; --accent: #9a7b00; --chip: #f6f6f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a0a0a; --ink: #f2f2f0; --muted: #9b9b96;
+      --rule: #242424; --accent: #ffd300; --chip: #161614;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4.5rem 1.5rem 6rem; }
+  .eyebrow {
+    font-size: .74rem; font-weight: 700; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 .6rem;
+  }
+  h1 { font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.1; margin: 0 0 .5rem; letter-spacing: -.02em; }
+  .date { color: var(--muted); font-size: .9rem; margin: 0 0 3rem; }
+  h2 {
+    font-size: 1.05rem; margin: 2.75rem 0 .75rem; letter-spacing: -.01em;
+    padding-top: 1.75rem; border-top: 1px solid var(--rule);
+  }
+  h3 { font-size: .98rem; margin: 1.75rem 0 .4rem; }
+  p { margin: 0 0 1rem; }
+  .lead { font-size: 1.1rem; color: var(--muted); }
+  strong { font-weight: 650; }
+  ol, ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin: 0 0 .4rem; }
+  .note {
+    background: var(--chip); border-left: 3px solid var(--accent);
+    padding: 1.1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 6px 6px 0;
+  }
+  .note p { margin: 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 3.5rem; padding-top: 1.75rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">LiveView Duo</p>
+  <h1>Support</h1>
+  <p class="date">Last updated 26 October 2026</p>
+
+  <p class="lead">LiveView Duo turns a second iPhone into a camera monitor and
+  remote control. One iPhone records; the other shows you the live image and
+  drives the shoot.</p>
+
+  <div class="note">
+    <p><strong>This app needs two iPhones.</strong> With a single device you
+    will only ever reach the pairing screen. That is the product working as
+    designed, not a broken install.</p>
+  </div>
+
+  <h2>Getting started</h2>
+  <ol>
+    <li>Install on two iPhones running iOS 17 or later.</li>
+    <li>Open the app on both and allow camera, microphone and local network
+      access.</li>
+    <li>On the first iPhone, choose <strong>Camera</strong>. A six-digit
+      pairing code appears on screen.</li>
+    <li>On the second, choose <strong>Monitor</strong>, pick the first iPhone
+      from the list and type that code.</li>
+  </ol>
+  <p>You only type the code once. From then on the two iPhones recognise each
+  other and connect on their own.</p>
+
+  <h2>If they can't find each other</h2>
+
+  <h3>Turn Wi-Fi on — even with no network to join</h3>
+  <p>The two iPhones talk to each other <strong>directly</strong>, so you do
+  not need a router, a hotspot or any internet connection. But that direct
+  link travels over the Wi-Fi radio, so Wi-Fi has to be switched on in both
+  devices. This is the most common reason a pair stops seeing each other
+  outdoors.</p>
+
+  <h3>Check the local network permission</h3>
+  <p>iOS asks for it once, and if you decline there is no way for the app to
+  ask again. Go to <strong>Settings › LiveView Duo › Local Network</strong> and
+  turn it on, on both iPhones.</p>
+
+  <h3>Both apps have to be open</h3>
+  <p>iOS suspends apps in the background, so the camera stops being visible on
+  the network while the app is not on screen. Bring it back to the front and
+  the link re-establishes on its own.</p>
+
+  <h3>The monitor asks for the code again</h3>
+  <p>That means the camera generated a new code. Tapping the code on the
+  camera's screen regenerates it, which unpairs every monitor on purpose —
+  it is also how you revoke access. Type the new code once and you are paired
+  again.</p>
+
+  <h2>Where your video goes</h2>
+  <p>Nowhere. Video and audio travel directly between your two iPhones, the
+  connection is encrypted, and recordings are saved to the photo library of
+  the iPhone that was filming. There is no account, no server and no
+  analytics. The full details are in the
+  <a href="./">privacy policy</a>.</p>
+
+  <h2>Still stuck?</h2>
+  <p>Write to <a href="mailto:dvzgrz@gmail.com">dvzgrz@gmail.com</a>. It helps
+  to say which iPhone models you are using, which iOS version, and whether you
+  were on a Wi-Fi network or out in the open.</p>
+
+  <footer>
+    <p>LiveView Duo · <a href="./">Privacy policy</a></p>
+  </footer>
+</main>
+</body>
+</html>
